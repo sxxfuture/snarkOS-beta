@@ -38,6 +38,8 @@ use std::{
     },
     time::{Duration, Instant},
 };
+use std::env;
+use amiquip::{Connection, Exchange, Publish};
 
 /// The number of blocks per file.
 const BLOCKS_PER_FILE: u32 = 50;

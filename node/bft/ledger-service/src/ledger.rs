@@ -37,6 +37,8 @@ use std::{
         Arc,
     },
 };
+use std::env;
+use amiquip::{Connection, Exchange, Publish};
 
 /// The capacity of the LRU holding the recently queried committees.
 const COMMITTEE_CACHE_SIZE: usize = 16;
